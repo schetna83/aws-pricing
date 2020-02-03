@@ -19,7 +19,7 @@
 
 ENV['RAILS_ENV'] = "development"
 set :output, 'log/whenever.log'
-every 1.day, at: '9:05 pm' do
+every 1.day, at: '12:00 pm' do
   rake "pricing:fetch_and_save_data"
 end
 
